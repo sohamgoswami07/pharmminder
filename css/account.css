@@ -1,0 +1,58 @@
+body {
+    background: #10e7f4;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #10e7f4;
+}
+
+.profile-button {
+    background: #10e7f4;
+    box-shadow: none;
+    border: 1px solid #10e7f4;
+}
+
+.profile-button:hover {
+    color: #000000;
+    background: transparent;
+    border: 1px solid #10e7f4;
+}
+
+.profile-button:focus {
+    background: #10e7f4;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #10e7f4;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #10e7f4;
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 11px;
+}
+
+.add-experience:hover {
+    background: #10e7f4;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #10e7f4;
+}
+
+.log-out-button {
+    width: 100%;
+    height: auto;
+    background-color: #ff1c1c;
+    border: none;
+    color: #ffffff;
+}
+
+.log-out-button:hover {
+    background-color: #ff491c;
+}

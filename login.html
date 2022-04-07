@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>PharmMinder</title>
+
+  <!-- font awesome style -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/login.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="container" id="container">
+    <div class="form-container sign-up-container">
+      <form action="#">
+        <h3>Create Account</h3>
+        <div class="social-container">
+          <a href="#" class="social"><img src="images/google-logo-9808.png" alt=""></a>
+          <a href="#" class="social"><img src="images/facebook-logo-493.png" alt=""></a>
+        </div>
+        <span>or use your email for registration</span>
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <button>Sign Up</button>
+        <p>Log in with your account<button class="ghost" id="signIn2">Sign In</button></p>
+      </form>
+    </div>
+    <div class="form-container sign-in-container">
+      <form action="#">
+        <h3>Sign in</h3>
+        <div class="social-container">
+          <a href="#" class="social"><img src="images/google-logo-9808.png" alt=""></a>
+          <a href="#" class="social"><img src="images/facebook-logo-493.png" alt=""></a>
+        </div>
+        <span>or use your account</span>
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <a href="#" class="forget_password">Forgot your password?</a>
+        <button>Sign In</button>
+        <p>Start journey with us<button class="ghost" id="signUp2">Sign Up</button></p>
+      </form>
+    </div>
+    <div class="overlay-container">
+      <div class="overlay">
+        <div class="overlay-panel overlay-left">
+          <h2>Welcome Back!</h2>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="ghost" id="signIn">Sign In</button>
+        </div>
+        <div class="overlay-panel overlay-right">
+          <h2>Hello, Friend!</h2>
+          <p>Enter your personal details and start journey with us</p>
+          <button class="ghost" id="signUp">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+  const signUpButton = document.getElementById('signUp');
+  const signUpButton2 = document.getElementById('signUp2');
+  const signInButton = document.getElementById('signIn');
+  const signInButton2 = document.getElementById('signIn2');
+  const container = document.getElementById('container');
+
+  signUpButton.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+  });
+
+  signInButton.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+  });
+
+  signUpButton2.addEventListener('click', () => {
+    container.classList.add("right-panel-active");
+  });
+
+  signInButton2.addEventListener('click', () => {
+    container.classList.remove("right-panel-active");
+  });
+</script>
+
+</body>
+
+</html>
